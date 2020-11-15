@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html, body, #root {
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: 600;
+    background-color: rgb(241, 241, 241);
+    color: rgb(20, 20, 20);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border: 1px solid rgb(180, 180, 180);
+    background: transparent;
+    width: 80%;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid gray;
+}
+
+h1 {
+    margin: 5rem auto;
+    font-size: 5rem;
+}
+
+.formContainer {
+    position: relative;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0;
+}
+
+.label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.urlContainer, .slugContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.slugContainer > div:nth-child(2) {
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+input#slug {
+    width: 10rem;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+    border: 0px solid transparent;
+    outline: none;
+}
+
+input#slug:focus {
+    width: 10rem;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+    border: 0px solid transparent;
+}
+
+.submitContainer {
+    margin: 2rem auto;
+}
+
+.submitButton {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    box-shadow:rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button:focus {
+    background-color: rgb(233, 233, 233);
+}
+
+.linkContainer {
+    border: 1px solid black;
+    padding: 0;
+    width: 80%;
+    margin: 1rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.clickToCopy {
+    border-top: 1px solid black;
+    padding: 1rem 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    .linkContainer {
+        border: 1px solid black;
+        padding: 0;
+        width: 80%;
+        margin: 1rem auto auto auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .clickToCopy {
+        border-top: 0px solid transparent;
+        border-left: 1px solid black;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
